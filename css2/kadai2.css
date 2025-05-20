@@ -1,6 +1,7 @@
 /* OOCSS */
 @charset "utf-8";
 
+
 .main_flex {
   display: flex;
   margin-bottom: 60px;
