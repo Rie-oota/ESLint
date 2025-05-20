@@ -1,0 +1,110 @@
+/* OOCSS */
+@charset "utf-8";
+
+.main_flex {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.keyvisual {
+  width: 50%;
+}
+
+.keyvisual img {
+  width: 100%;
+  height: 700px;
+}
+
+.main_text {
+  width: 50%;
+  padding: 40px 80px 0;
+}
+
+.main_title {
+  font-size: 27px;
+}
+
+.material_title {
+  font-size: 20px;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 30px;
+}
+
+.material {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.step_title {
+  font-size: 20px;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 30px;
+}
+
+.step {
+  padding-inline-start: 20px;
+}
+
+.main_text ol li {
+  border-bottom: 1px dotted gainsboro;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.material dt {
+  border-bottom: 1px dotted gainsboro;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 85%;
+}
+
+.material dd {
+  border-bottom: 1px dotted gainsboro;
+  padding: 5px 0;
+  text-align: right;
+  width: 15%;
+  margin-inline-start: 0px;
+}
+
+.btn {
+  width: 130px;
+  padding: 20px 60px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+
+.link_list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.link_list li a {
+  color: black;
+  margin: 0 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .main_flex {
+    flex-direction: column;
+  }
+
+  .keyvisual {
+  width: 100%;
+  }
+
+}
