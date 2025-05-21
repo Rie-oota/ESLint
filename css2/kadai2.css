@@ -1,6 +1,17 @@
 /* OOCSS */
 @charset "utf-8";
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 .main_flex {
   display: flex;
   margin-bottom: 60px;
@@ -13,88 +24,102 @@
 .keyvisual img {
   width: 100%;
   height: 700px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+img {
+  max-width: 100%;
 }
 
 .main_text {
   width: 50%;
-  padding: 40px 80px 0;
+  padding: 40px 5% 0;
 }
 
 .main_title {
-  font-size: 27px;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
 }
 
 .material_title {
-  font-size: 20px;
-  border-bottom: 1px solid gainsboro;
-  margin-top: 30px;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin: 40px 0 15px 0;
 }
 
 .material {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .step_title {
-  font-size: 20px;
-  border-bottom: 1px solid gainsboro;
-  margin-top: 30px;
-}
-
-.step {
-  padding-inline-start: 20px;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin: 40px 0 15px 0;
 }
 
 .main_text ol li {
-  border-bottom: 1px dotted gainsboro;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
+  margin-left: 20px;
 }
 
 .material dt {
-  border-bottom: 1px dotted gainsboro;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
   width: 85%;
 }
 
 .material dd {
-  border-bottom: 1px dotted gainsboro;
-  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
   text-align: right;
   width: 15%;
-  margin-inline-start: 0px;
 }
 
 .btn {
-  width: 130px;
-  padding: 20px 60px;
-  border: 1px solid black;
   text-align: center;
-  margin: 0 auto 80px;
+  margin-bottom:80px;
 }
 
 .btn a {
-  color: black;
+  display: inline-block;
+  border: solid 1px #2b2a27;
+  font-size: 0.875rem;
+  padding: 18px 60px;
   text-decoration: none;
+}
+
+body {
+  color: #2b2a27;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
 }
 
 .link_list {
   display: flex;
-  list-style: none;
   justify-content: center;
-  font-size: 10px;
+  margin-bottom: 20px;
 }
 
-.link_list li a {
-  color: black;
+ul {
+  list-style: none;
+}
+
+.link_list li {
   margin: 0 10px;
 }
 
-footer p {
+a {
+  color: #2b2a27;
+}
+
+footer {
   text-align: center;
-  font-size: 10px;
+  font-size: 0.75rem;
+  padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,7 +129,15 @@ footer p {
   }
 
   .keyvisual {
-  width: 100%;
+    width: 100%;
+  }
+
+  .keyvisual img {
+    object-fit: fill;
+  }
+
+  .main_text {
+    width: 100%;
   }
 
 }
